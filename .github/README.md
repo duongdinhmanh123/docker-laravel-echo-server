@@ -1,4 +1,4 @@
-# oanhnn/laravel-echo-server
+# laravel-echo-server
 
 Alpine based [Laravel Echo Server](https://github.com/tlaverdure/laravel-echo-server) image.
 
@@ -130,21 +130,3 @@ If some environment variables are existed (allow load `/app/.env` file is found)
 | `LARAVEL_ECHO_SERVER_SSL_CERT`       | `sslCertPath`                   | |
 | `LARAVEL_ECHO_SERVER_SSL_PASS`       | `sslPassphrase`                 | |
 | `LARAVEL_ECHO_SERVER_SSL_CHAIN`      | `sslCertChainPath`              | |
-
-See more about environment variables in [here](https://github.com/tlaverdure/laravel-echo-server/blob/master/README.md#dotenv)
-
-
-## Contributing
-
-All code contributions must go through a pull request and approved by a core developer before being merged. 
-This is to ensure proper review of all the code.
-
-Fork the project, create a feature branch, and send a pull request.
-
-If you would like to help take a look at the [list of issues](https://github.com/oanhnn/docker-laravel-echo-server/issues).
-
-## License
-
-This project is released under the MIT License.   
-Copyright © 2020 [Oanh Nguyen](https://github.com/oanhnn)   
-Please see [License File](https://github.com/oanhnn/docker-laravel-echo-server/blob/master/LICENSE) for more information.
