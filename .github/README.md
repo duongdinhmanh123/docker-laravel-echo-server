@@ -4,8 +4,8 @@ Alpine based [Laravel Echo Server](https://github.com/tlaverdure/laravel-echo-se
 
 > [Tiếng Việt](README-vi.md)
 
-[![Build Status](https://github.com/manhdd/docker-laravel-echo-server/workflows/CI/badge.svg)](https://github.com/manhdd/docker-laravel-echo-server/actions)
-[![Software License](https://img.shields.io/github/license/manhdd/docker-laravel-echo-server.svg)](https://github.com/manhdd/docker-laravel-echo-server/blob/master/LICENSE)
+[![Build Status](https://github.com/manh252/docker-laravel-echo-server/workflows/CI/badge.svg)](https://github.com/manh252/docker-laravel-echo-server/actions)
+[![Software License](https://img.shields.io/github/license/manh252/docker-laravel-echo-server.svg)](https://github.com/manh252/docker-laravel-echo-server/blob/master/LICENSE)
 
 ## Features
 
@@ -17,14 +17,14 @@ Alpine based [Laravel Echo Server](https://github.com/tlaverdure/laravel-echo-se
 
 ## Tags
 
-Image `manhdd/laravel-echo-server`
+Image `manh252/laravel-echo-server`
 
 - `X.Y.Z`  - the PATH  version (git tag `vX.Y.Z`)
 - `X.Y`    - the MINOR version 
 - `X`      - the MAJOR version
 - `latest` - the latest version
 
-Image `ghcr.io/manhdd/laravel-echo-server`
+Image `ghcr.io/manh252/laravel-echo-server`
 
 - `edge`         - the edge version, it is newest code from branch `master`
 - `nightly`      - the nightly version, it is builded daily at 8:20 AM UTC
@@ -42,17 +42,17 @@ Image `ghcr.io/manhdd/laravel-echo-server`
 Run laravel-echo-server by command
 
 ```bash
-$ docker run -d -p 6001:6001 -v $(pwd):/app manhdd/laravel-echo-server
+$ docker run -d -p 6001:6001 -v $(pwd):/app manh252/laravel-echo-server
 ```
 
 
 ### Run laravel-echo-server sub-commands
 
 ```bash
-$ docker run --rm -it -v $(pwd):/app manhdd/laravel-echo-server init
-$ docker run --rm -it -v $(pwd):/app manhdd/laravel-echo-server start
-$ docker run --rm -it -v $(pwd):/app manhdd/laravel-echo-server client:add
-$ docker run --rm -it -v $(pwd):/app manhdd/laravel-echo-server client:remove
+$ docker run --rm -it -v $(pwd):/app manh252/laravel-echo-server init
+$ docker run --rm -it -v $(pwd):/app manh252/laravel-echo-server start
+$ docker run --rm -it -v $(pwd):/app manh252/laravel-echo-server client:add
+$ docker run --rm -it -v $(pwd):/app manh252/laravel-echo-server client:remove
 ```
 
 ### Run with docker-compose
@@ -68,7 +68,7 @@ See some examples in `examples` folder.
   please set environment variable `LARAVEL_ECHO_SERVER_GENERATE_CONFIG` to `false` (default `true`).   
   
   ```bash
-  $ docker run -d -p 6001:6001 -v $(pwd):/app -e "LARAVEL_ECHO_SERVER_GENERATE_CONFIG=false" manhdd/laravel-echo-server
+  $ docker run -d -p 6001:6001 -v $(pwd):/app -e "LARAVEL_ECHO_SERVER_GENERATE_CONFIG=false" manh252/laravel-echo-server
   ```
 
 
@@ -108,7 +108,7 @@ It be configured by environment variable `LARAVEL_ECHO_SERVER_DB` (default is `r
   The SQLite file will store in `/app/database/`
 
   ```bash
-  $ docker run -d -p 6001:6001 -v $(pwd):/app -e "LARAVEL_ECHO_SERVER_DB=sqlite" manhdd/laravel-echo-server
+  $ docker run -d -p 6001:6001 -v $(pwd):/app -e "LARAVEL_ECHO_SERVER_DB=sqlite" manh252/laravel-echo-server
   ```
 
 
